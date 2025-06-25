@@ -1,0 +1,90 @@
+<!-- index.html: Main HTML for the Avaris website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+  <title>Avaris Financial Services</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+  <!-- Header with navigation bar -->
+  <header>
+    <nav>
+      <div class="logo">Avaris</div>  <!-- Company logo/name -->
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Us section -->
+  <section id="about" class="section">
+    <h2>About Avaris</h2>
+    <p>
+      Avaris provides expert financial advice and wealth management services. 
+      Our mission is to help clients grow and protect their wealth through 
+      personalized investment strategies and market opportunities.
+    </p>
+  </section>
+
+  <!-- Services section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Financial Planning:</strong> Comprehensive plans tailored to your goals.</li>
+      <li><strong>Wealth Management:</strong> Asset allocation and portfolio management.</li>
+      <li><strong>Investment Advisory:</strong> Trading in stocks, bonds, and other markets.</li>
+      <li><strong>Retirement Solutions:</strong> Customized strategies for retirement income.</li>
+    </ul>
+  </section>
+
+  <!-- Testimonials section with slider -->
+  <section id="testimonials" class="section">
+    <h2>What Our Clients Say</h2>
+    <div class="slider">
+      <!-- Each slide contains a testimonial; only one is shown at a time -->
+      <div class="slide active">
+        <p class="quote">“Avaris helped me navigate complex markets with ease. Their guidance was invaluable.”</p>
+        <p class="author">– John Doe, Avaris Client</p>
+      </div>
+      <div class="slide">
+        <p class="quote">“Professional and knowledgeable team. My investments have never been better.”</p>
+        <p class="author">– Jane Smith, Investor</p>
+      </div>
+      <div class="slide">
+        <p class="quote">“Their financial planning services are top-notch. I feel secure about my retirement.”</p>
+        <p class="author">– Alex Lee, Retiree</p>
+      </div>
+      <!-- Navigation buttons for slider -->
+      <button id="prev">❮ Prev</button>
+      <button id="next">Next ❯</button>
+    </div>
+  </section>
+
+  <!-- Contact section with a simple form -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Avaris Financial Services</p>
+  </footer>
+
+  <!-- Include JavaScript at end of body -->
+  <script src="script.js"></script>
+</body>
+</html>

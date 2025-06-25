@@ -1,0 +1,150 @@
+/* style.css: Styles for the Avaris website */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Header and navigation */
+header {
+  background-color: #1e2b51; /* dark blue */
+  color: white;
+}
+nav {
+  display: flex;               /* Flex container for nav */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.nav-links a:hover {
+  background-color: #2e3d6f;
+  border-radius: 4px;
+}
+
+/* Section styles */
+.section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.section h2 {
+  color: #4500e2; /* purple-blue */
+}
+
+/* Services list */
+#services ul {
+  list-style: square;
+  margin-left: 20px;
+}
+
+/* Testimonials slider */
+.slider {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.slide {
+  display: none;       /* Hide by default */
+  text-align: center;
+}
+.slide.active {
+  display: block;      /* Show active slide */
+}
+.quote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.author {
+  font-weight: bold;
+  color: #4500e2;
+}
+#prev, #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4500e2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#prev {
+  left: 10px;
+}
+#next {
+  right: 10px;
+}
+#prev:hover, #next:hover {
+  background-color: #3100a2; /* darker purple */
+}
+
+/* Contact form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+#contact label {
+  margin-top: 10px;
+}
+#contact input, #contact textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#contact button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #4500e2;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#contact button:hover {
+  background-color: #3100a2;
+}
+
+/* Footer */
+footer {
+  background-color: #1e2b51;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Responsive design: stack nav links on mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  #prev, #next {
+    display: none; /* Hide slider buttons on very small screens if needed */
+  }
+}
